@@ -1,5 +1,5 @@
 import pytest
-from src.package.translations import full_to_slang
+from src.package.translations import full_to_slang, slang_to_emoji
 
 class Tests:
     @pytest.fixture
@@ -56,22 +56,22 @@ class Tests:
         """
         Test basic slang to emoji conversion.
         """
-        assert full_to_slang("goat") == "🐐"
+        assert slang_to_emoji("goat") == "🐐"
     
     def test_slang_to_emoji_case_sensitive(self):        
         """
         Check that input translates regardless of upper/lower case
         """
-        assert full_to_slang("GOAT") == "🐐"
+        assert slang_to_emoji("GOAT") == "🐐"
         
     def test_slang_to_emoji_no_emoji(self):
         """
         Check that no translations happen if there is no slang or slang not in translation list
         """
-        assert full_to_slang("lmc") == "lmc"
+        assert slang_to_emoji("lmc") == "lmc"
     
     def test_slang_mixed_with_emoji(self):
         """
         Check that sentence can include both text and emoji conversions
         """
-        assert full_to_slang("lmc brb goat") == "lmc 🔙 🐐"
+        assert slang_to_emoji("lmc brb goat") == "lmc 🔙 🐐"

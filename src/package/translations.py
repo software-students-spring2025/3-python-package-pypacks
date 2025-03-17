@@ -14,7 +14,6 @@ if __name__ == "__main__":
     print(f"Original: {sentence}")
     print(f"Slang:{full_to_slang(sentence)}")
 
-
 ##slang to emojis
 def slang_to_emoji(words):
     words = str(words).lower()
