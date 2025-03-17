@@ -9,6 +9,7 @@ version = "1.0.0"
 //put your names and emails here
 authors = [
   { name="Ajok Thon", email="at4933@nyu.edu" },
+  { name="Nyjur Majok", email="ntm7075@nyu.edu" }
 ]
 license = { file = "LICENSE" }
 readme = "README.md"
