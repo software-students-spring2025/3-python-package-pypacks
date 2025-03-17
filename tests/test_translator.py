@@ -1,5 +1,5 @@
 import pytest
-from package import translations
+from src.package.translations import full_to_slang
 
 class Tests:
     @pytest.fixture
@@ -28,10 +28,29 @@ class Tests:
         actual = True  # the value we see in reality
         assert actual == expected, "Expected True to be equal to True!"
 
-    def test_full_to_slang():
+    def test_full_to_slang(self):
         """
         Test basic slang conversion.
         """
         assert full_to_slang("I don't know") == "idk"
+    
+    def test_full_to_slang_case_sensitive(self):        
+        """
+        Check for different cases
+        """
+        assert full_to_slang("i DoN't kNoW") == "idk"
+        
+    def test_full_to_slang_no_slang(self):
+        """
+        If there is no slang in the sentence
+        """
+        assert full_to_slang("There is no slang") == "there is no slang"
+    
+    def test_full_mixed_with_slang(self):
+        """
+        sentences with both slang and regular text
+        """
+        assert full_to_slang("To be honest, I am tired") == "tbh, i am tired"
+        
 
 

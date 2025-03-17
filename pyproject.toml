@@ -5,8 +5,8 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "package"
 description = "A Python package that translates slang and text abbreviations into standard English, making informal messages more understandable. Developed with pipenv, built using setuptools, tested with pytest, and uploaded to PyPI using twine."
-version = "1.0.0"
-//put your names and emails here
+version = "1.0.1"
+
 authors = [
   { name="Ajok Thon", email="at4933@nyu.edu" },
 ]
@@ -31,3 +31,4 @@ dev = ["pytest"]
 
 [project.scripts]
 package = "package.__main__:main"
+
