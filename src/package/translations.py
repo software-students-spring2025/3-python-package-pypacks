@@ -1,6 +1,7 @@
 #full text to slang words
 from package.fullToSlang import fullToSlang
 from package.slangToEmoji import slangToEmoji
+from package.SlangToFull import SlangToFull
 
 def full_to_slang(words):
     words = words.lower()
@@ -8,10 +9,13 @@ def full_to_slang(words):
         words = words.replace(phrase, slang)
     return words
 
+import re
+
 def slang_to_full(words):
     words = words.lower()
-    for phrase, slang in slang_to_full.items():
-        words = words.replace(phrase, slang)
+    for slang, phrase in SlangToFull.items():
+        pattern = r'\b{}\b'.format(re.escape(slang))
+        words = re.sub(pattern, phrase, words)
     return words
 
 

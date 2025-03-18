@@ -189,7 +189,7 @@ fullToSlang = {
     "totally": "ttly",
     "good to know": "gtk",
     "you never know": "ynk",
-    "don\u2019t forget to be awesome": "dftba",
+    "don't forget to be awesome": "dftba",
     "tender loving care": "tlc",
     "not a good idea": "nagi",
     "over my dead body": "omdb",
