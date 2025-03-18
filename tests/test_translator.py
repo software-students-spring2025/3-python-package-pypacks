@@ -1,5 +1,5 @@
 import pytest
-from src.package.translations import full_to_slang, slang_to_emoji
+from src.package.translations import full_to_slang, slang_to_emoji, slang_to_full
 
 class Tests:
     @pytest.fixture
@@ -75,3 +75,31 @@ class Tests:
         Check that sentence can include both text and emoji conversions
         """
         assert slang_to_emoji("lmc brb goat") == "lmc 🔙 🐐"
+
+    def test_slang_to_full(self):
+        """
+        Test basic conversion.
+        """
+        assert slang_to_full("nm") == "nothing much"
+        assert slang_to_full("oh nm") == "oh nothing much"
+
+    def test_slang_to_full_case_sensitive(self):        
+        """
+        Check for different cases
+        """
+        assert slang_to_full("fReN") == "friend"
+        assert slang_to_full("I miss you fReN") == "i miss you friend"
+        assert slang_to_full("I miss you FRen ") == "i miss you friend "
+
+    
+    def test_slang_mixed_with_full(self):
+        """
+        sentences with both slang and regular text
+        """
+        assert full_to_slang("To be honest, I am tired") == "tbh, i am tired"
+
+    
+
+
+    
+
