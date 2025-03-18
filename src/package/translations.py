@@ -8,6 +8,13 @@ def full_to_slang(words):
         words = words.replace(phrase, slang)
     return words
 
+def slang_to_full(words):
+    words = words.lower()
+    for phrase, slang in slang_to_full.items():
+        words = words.replace(phrase, slang)
+    return words
+
+
 ##slang to emojis
 def slang_to_emoji(words):
     words = str(words).lower()
