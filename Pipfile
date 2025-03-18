@@ -4,6 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+pytest = "*"
+build = "*"
+package = {file = ".", editable = true}
+
+
 
 [dev-packages]
 
