@@ -25,3 +25,12 @@ def slang_to_emoji(words):
     for slang, emoji in slangToEmoji.items():
         words = words.replace(slang, emoji)
     return words
+
+## remove slang words from a sentence
+def remove_slang(words):
+    words = words.lower()
+
+    for slang in SlangToFull.keys():
+        words = re.sub(r'\b{}\b'.format(re.escape(slang)), '', words)
+
+    return " ".join(words.split())

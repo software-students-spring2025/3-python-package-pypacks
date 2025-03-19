@@ -46,7 +46,14 @@ text = "goat"
 translated_text = slang_to_emoji(text)
 print(translated_text)  # Output: "🐐"
 ```
-### 4th Function Here:
+### Remove Slang from Sentence:
+```python
+from [package_name] import remove_slang
+
+text = "brb im going to get food"
+cleaned_text = remove_slang(text)
+print(cleaned_text) # Ouput: "im going to get food"
+```
 
 ## Running PySlangTranslator in a Virtual Environment:
 1. Create a pipenv-managed virtual environment and install the package:

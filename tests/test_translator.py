@@ -1,5 +1,5 @@
 import pytest
-from src.package.translations import full_to_slang, slang_to_emoji, slang_to_full
+from src.package.translations import full_to_slang, slang_to_emoji, slang_to_full, remove_slang
 
 class Tests:
     @pytest.fixture
@@ -98,6 +98,21 @@ class Tests:
         """
         assert full_to_slang("To be honest, I am tired") == "tbh, i am tired"
 
+    def test_remove_slang(self):
+        """ test basic slang removal """
+        assert remove_slang("Brb im going to get food") == "im going to get food"
+
+    def test_remove_slang_case_sensitive(self):
+        """ ensure function is case insensitive """
+        assert remove_slang("BRB im GOING to get FOOD") == "im going to get food"
+
+    def test_remove_slang_mixed_sentences(self):
+        """ ensure function removes slang while keeping other words """
+        assert remove_slang("Tbh this food is great") == "this food is great"
+
+    def test_remove_slang_no_slang(self):
+        """ ensure function does nothing if there is no slang """
+        assert remove_slang("i love coding") == "i love coding"
     
 
 
