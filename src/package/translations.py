@@ -36,9 +36,3 @@ def slang_to_emoji(words):
         #words = words.replace(slang, emoji)
         words = re.sub(pattern, emoji, words)
     return words
-
-
-
-
-
-
