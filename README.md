@@ -1,7 +1,7 @@
 ![Python build & test](https://github.com/software-students-spring2025/3-python-package-pypacks/actions/workflows/build.yaml/badge.svg)
 
 
-# PySlang Translator
+# PyToSlang Translator
 PySlangTranslator is a Python package that translates text abbreviations into their full meanings and back. It also changes slang words to emojis. Instructions/requirments for the creation of this package were referenced from the class course [instructions](./instructions.md).
 
 ## Features
@@ -14,6 +14,7 @@ PySlangTranslator is a Python package that translates text abbreviations into th
 
 
 ## Pipy Package Link:
+[PyToSlang Package Link]()
 
 ## Installation:
 ```pip install [package name] ```
