@@ -22,7 +22,7 @@ PySlangTranslator is a Python package that translates text abbreviations into th
 Here is how you can use PySlangTranslator in your Python code:
 ### Translate Full Sentences to Slang:
 ```python
-from [package_name] import full_to_slang
+from PyToSlang import full_to_slang
 
 text = "I don't know what to do"
 translated_text = full_to_slang(text)
@@ -31,7 +31,7 @@ print(translated_text)  # Output: "idk what to do"
 
 ### Translate Slang to Full Words:
 ```python
-from [package_name] import slang_to_full
+from PyToSlang import slang_to_full
 
 text = "nm"
 translated_text = slang_to_full(text)
@@ -40,7 +40,7 @@ print(translated_text)  # Output: "nothing much"
 
 ### Translate Slang to Emoji:
 ```python
-from [package_name] import slang_to_emoji
+from PyToSlang import slang_to_emoji
 
 text = "goat"
 translated_text = slang_to_emoji(text)
@@ -48,7 +48,7 @@ print(translated_text)  # Output: "🐐"
 ```
 ### Remove Slang from Sentence:
 ```python
-from [package_name] import remove_slang
+from PyToSlang import remove_slang
 
 text = "brb im going to get food"
 cleaned_text = remove_slang(text)
@@ -58,7 +58,7 @@ print(cleaned_text) # Ouput: "im going to get food"
 ## Running PySlangTranslator in a Virtual Environment:
 1. Create a pipenv-managed virtual environment and install the package:
 ```sh
-pipenv install [package_name]
+pipenv install PyToSlang
 ```
 2. Activate the virtual environment:
 ```sh
@@ -66,7 +66,7 @@ pipenv shell
 ```
 3. Create a Python program file (e.g., my_program.py) and import PySlangTranslator:
 ```python
-from [package_name] import full_to_slang
+from PyToSlang import full_to_slang
 
 text = "I don't know what to do"
 translated_text = full_to_slang(text)
