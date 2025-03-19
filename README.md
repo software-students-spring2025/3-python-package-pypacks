@@ -2,7 +2,7 @@
 
 
 # PyToSlang Translator
-PySlangTranslator is a Python package that translates text abbreviations into their full meanings and back. It also changes slang words to emojis. Instructions/requirments for the creation of this package were referenced from the class course [instructions](./instructions.md).
+PyToSlang is a Python package that translates text abbreviations into their full meanings and back. It also changes slang words to emojis. Instructions/requirments for the creation of this package were referenced from the class course [instructions](./instructions.md).
 
 ## Features
 
@@ -20,7 +20,7 @@ PySlangTranslator is a Python package that translates text abbreviations into th
 ```pip install [package name] ```
 
 # Usage:
-Here is how you can use PySlangTranslator in your Python code:
+Here is how you can use PyToSlang in your Python code:
 ### Translate Full Sentences to Slang:
 ```python
 from PyToSlang import full_to_slang
@@ -56,7 +56,7 @@ cleaned_text = remove_slang(text)
 print(cleaned_text) # Ouput: "im going to get food"
 ```
 
-## Running PySlangTranslator in a Virtual Environment:
+## Running PyToSlang in a Virtual Environment:
 1. Create a pipenv-managed virtual environment and install the package:
 ```sh
 pipenv install PyToSlang
