@@ -7,6 +7,7 @@ name = "pypi"
 twine = "*"
 pytest = "*"
 build = "*"
+translations = "*"
 
 [dev-packages]
 
