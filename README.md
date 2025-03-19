@@ -65,7 +65,7 @@ pipenv install PyToSlang
 ```sh
 pipenv shell
 ```
-3. Create a Python program file (e.g., my_program.py) and import PySlangTranslator:
+3. Create a Python program file (e.g., my_program.py) and import PyToSlang:
 ```python
 from PyToSlang import full_to_slang
 
