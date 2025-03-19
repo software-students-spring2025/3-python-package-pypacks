@@ -10,8 +10,8 @@ version = "1.0.1"
 authors = [
   { name="Ajok Thon", email="at4933@nyu.edu" },
   { name="Nyjur Majok", email="ntm7075@nyu.edu" },
-  { name = Arkadiuz Mercado, email= aam9704@nyu.edu},
-  { name = Isaac Vivar, email = iv2050@nyu.edu}
+  { name = "Arkadiuz Mercado", email= aam9704@nyu.edu},
+  { name = "Isaac Vivar", email = iv2050@nyu.edu}
 ]
 license = { file = "LICENSE" }
 readme = "README.md"
