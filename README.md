@@ -25,7 +25,7 @@ Here is how you can use PyToSlang in your Python code:
 ### Translate Full Sentences to Slang:
 
 ```python
-from PyToSlang import full_to_slang
+from pytoslang import full_to_slang
 
 text = "I don't know what to do"
 translated_text = full_to_slang(text)
@@ -35,7 +35,7 @@ print(translated_text)  # Output: "idk what to do"
 ### Translate Slang to Full Words:
 
 ```python
-from PyToSlang import slang_to_full
+from pytoslang import slang_to_full
 
 text = "nm"
 translated_text = slang_to_full(text)
@@ -45,7 +45,7 @@ print(translated_text)  # Output: "nothing much"
 ### Translate Slang to Emoji:
 
 ```python
-from PyToSlang import slang_to_emoji
+from pytoslang import slang_to_emoji
 
 text = "goat"
 translated_text = slang_to_emoji(text)
@@ -55,7 +55,7 @@ print(translated_text)  # Output: "🐐"
 ### Remove Slang from Sentence:
 
 ```python
-from PyToSlang import remove_slang
+from pytoslang import remove_slang
 
 text = "brb im going to get food"
 cleaned_text = remove_slang(text)
@@ -67,7 +67,7 @@ print(cleaned_text) # Ouput: "im going to get food"
 1. Create a pipenv-managed virtual environment and install the package:
 
 ```sh
-pipenv install PyToSlang
+pipenv install pytoslang
 ```
 
 2. Activate the virtual environment:
@@ -79,7 +79,7 @@ pipenv shell
 3. Create a Python program file (e.g., my_program.py) and import PyToSlang:
 
 ```python
-from PyToSlang import full_to_slang
+from pytoslang import full_to_slang
 
 text = "I don't know what to do"
 translated_text = full_to_slang(text)
@@ -89,7 +89,7 @@ print(translated_text)  # Output: "idk what to do"
 4. Run your program:
 
 ```sh
-python3 my_porgram.py
+python3 my_program.py
 ```
 
 5. Exit the virtual environement when done:
@@ -100,7 +100,7 @@ exit
 
 ## Example Program:
 
-You can find a complete example program demonstrating all functions of this package in the repository: [Insert Link Here]()
+You can find a complete example program demonstrating all functions of this package in the repository: [Here](https://github.com/software-students-spring2025/3-python-package-pypacks/blob/main/src/pytoslang/example_functions.py)
 
 ## Contributing:
 
