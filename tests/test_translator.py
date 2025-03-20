@@ -1,5 +1,5 @@
 import pytest
-from src.package.translations import full_to_slang, slang_to_emoji, slang_to_full, remove_slang
+from src.pytoslang.translations import full_to_slang, slang_to_emoji, slang_to_full, remove_slang
 
 class Tests:
     @pytest.fixture
