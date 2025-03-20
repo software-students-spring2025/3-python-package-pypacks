@@ -1,5 +1,4 @@
 #full text to slang words
-
 import string
 # from package.fullToSlang import fullToSlang
 # from package.slangToEmoji import slangToEmoji
@@ -84,4 +83,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
