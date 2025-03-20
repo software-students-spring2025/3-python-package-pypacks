@@ -1,8 +1,13 @@
 #full text to slang words
 import string
-from package.fullToSlang import fullToSlang
-from package.slangToEmoji import slangToEmoji
-from package.SlangToFull import SlangToFull
+# from package.fullToSlang import fullToSlang
+# from package.slangToEmoji import slangToEmoji
+# from package.SlangToFull import SlangToFull
+
+from .fullToSlang import fullToSlang
+from .slangToEmoji import slangToEmoji
+from .SlangToFull import SlangToFull
+
 
 def remove_punctuation(text):
     translator = str.maketrans('', '', string.punctuation)
