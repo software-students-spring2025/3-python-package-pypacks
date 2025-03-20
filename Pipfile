@@ -8,6 +8,7 @@ twine = "*"
 pytest = "*"
 build = "*"
 translations = "*"
+pytoslang = "*"
 
 [dev-packages]
 
