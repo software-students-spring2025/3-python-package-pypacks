@@ -47,8 +47,6 @@ def remove_slang(words):
 
     return " ".join(words.split())
 
-from translations import full_to_slang, slang_to_full, slang_to_emoji, remove_slang
-
 def main():
     #example text for all the necessary conversions 
 
