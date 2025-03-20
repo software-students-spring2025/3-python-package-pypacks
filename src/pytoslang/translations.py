@@ -1,9 +1,15 @@
 #full text to slang words
+
 import string
 import re
-from pytoslang.fullToSlang import fullToSlang
-from pytoslang.slangToEmoji import slangToEmoji
-from pytoslang.SlangToFull import SlangToFull
+
+#from pytoslang.fullToSlang import fullToSlang
+#from pytoslang.slangToEmoji import slangToEmoji
+#from pytoslang.SlangToFull import SlangToFull
+
+from .fullToSlang import fullToSlang
+from .slangToEmoji import slangToEmoji
+from .SlangToFull import SlangToFull
 
 def remove_punctuation(text):
     translator = str.maketrans('', '', string.punctuation)
