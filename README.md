@@ -70,10 +70,10 @@ print(cleaned_text) # Ouput: "im going to get food"
 pipenv install pytoslang
 ```
 
-2. Activate the virtual environment:
+2. Import the package.Once installed, you can use PyToSlang in your Python programs by importing it:
 
-```sh
-pipenv shell
+```python
+from pytoslang.translations import full_to_slang, slang_to_full, slang_to_emoji, remove_slang
 ```
 
 3. Create a Python program file (e.g., my_program.py) and import PyToSlang:
@@ -87,11 +87,11 @@ print(translated_text)  # Output: "idk what to do"
 ```
 
 4. Run your program:
+```python
+from pytoslang.translations import main
 
-```sh
-python3 my_program.py
+main()
 ```
-
 5. Exit the virtual environement when done:
 
 ```sh
