@@ -17,7 +17,7 @@ PyToSlang is a Python package that translates text abbreviations into their full
 [PyToSlang Package Link]()
 
 ## Installation:
-```pip install [package name] ```
+```pip install PyToSlang ```
 
 # Usage:
 Here is how you can use PyToSlang in your Python code:
