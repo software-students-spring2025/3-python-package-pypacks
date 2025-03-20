@@ -5,21 +5,10 @@ import string
 # from package.slangToEmoji import slangToEmoji
 # from package.SlangToFull import SlangToFull
 import re
-<<<<<<< HEAD
-
-#from pytoslang.fullToSlang import fullToSlang
-#from pytoslang.slangToEmoji import slangToEmoji
-#from pytoslang.SlangToFull import SlangToFull
-
-from .fullToSlang import fullToSlang
-from .slangToEmoji import slangToEmoji
-from .SlangToFull import SlangToFull
-=======
 from .fullToSlang import fullToSlang
 from .slangToEmoji import slangToEmoji
 from .SlangToFull import SlangToFull
 
->>>>>>> 223368cec0ba9dc21a4350b39b855193970e77fd
 
 def remove_punctuation(text):
     translator = str.maketrans('', '', string.punctuation)
